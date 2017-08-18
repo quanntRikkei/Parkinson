@@ -12,6 +12,8 @@ public abstract class BaseActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initView();
+        initData();
     }
 
     public abstract void initData();
